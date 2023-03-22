@@ -1,0 +1,83 @@
+@import "addressbook";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cdeac0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 12px;
+  width: 20% !important;
+  background-color: white;
+}
+
+tr {
+  padding: 0 15px;
+}
+
+tbody:before {
+  content: "@";
+  display: block;
+  line-height: 10px;
+  text-indent: -99999px;
+}
+
+.empty-row {
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 12px !important;
+  padding: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+table > tr > th:first-child {
+  border-bottom-left-radius: 12px !important;
+  border-top-left-radius: 12px !important;
+}
+table > tr > th:last-child {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+tbody > tr:not(:last-child) {
+  border-bottom: 1px solid gray !important;
+}
+tbody > tr:first-child > td:first-child {
+  border-top-left-radius: 12px !important;
+}
+tbody > tr:first-child > td:last-child {
+  border-top-right-radius: 12px !important;
+}
+tbody > tr:last-child > td:first-child {
+  border-bottom-left-radius: 12px !important;
+}
+tbody > tr:last-child > td:last-child {
+  border-bottom-right-radius: 12px !important;
+}

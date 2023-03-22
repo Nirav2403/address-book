@@ -1,0 +1,52 @@
+.address-book {
+  width: 90% !important;
+  display: flex;
+  justify-content: center;
+  background-color: #bde0fe;
+  padding: 24px;
+  margin: 24px !important;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-height: 800px;
+}
+
+.address-book > div {
+  width: 100%;
+  height: max-content !important;
+}
+.address-book-header > div {
+  display: flex;
+  align-items: center;
+}
+
+.address-book-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  font-weight: 400;
+}
+
+.action-column {
+  text-align: end;
+}
+.action-column > button:first-child {
+  margin-right: 10px;
+}
+
+.text-red {
+  color: red;
+}
+
+.search-field {
+  height: 37px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
