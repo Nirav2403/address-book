@@ -34,7 +34,10 @@ class AddressBook extends Component {
 
   toggleContactPopup = () => {
     const { showContactPopup } = this.state;
-    this.setState({ showContactPopup: !showContactPopup });
+    this.setState({
+      showContactPopup: !showContactPopup,
+      selectedContactData: {},
+    });
   };
 
   updateContact = (data) => {
